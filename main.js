@@ -1,1 +1,1 @@
-console.log("This is My Restorant Website");
+(()=>{"use strict";(()=>{const t=document.getElementById("content");document.body.appendChild(t);const e=document.createElement("div");t.appendChild(e);const n=document.createElement("button");n.textContent="Home",e.appendChild(n);const o=document.createElement("button");o.textContent="Contact Us",e.appendChild(o);const c=document.createElement("button");c.textContent="About Us",e.appendChild(c);const d=document.createElement("button");c.textContent="Menu",e.appendChild(d)})(),console.log("This is My Restorant Website")})();
