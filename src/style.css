@@ -1,0 +1,8 @@
+.content{
+    display: grid;
+
+}
+.btnContainer{
+    display: flex;
+    gap: 50px;
+}
