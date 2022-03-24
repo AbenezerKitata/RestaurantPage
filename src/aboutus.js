@@ -1,6 +1,7 @@
 const whoWeAre = () => {
 
   const div = document.createElement("div");
+  div.className = ('aboutUsContainer')
   const title = document.createElement("h1");
   title.textContent = "Who We Are!";
   div.appendChild(title);

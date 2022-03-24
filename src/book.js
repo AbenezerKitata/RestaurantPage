@@ -5,16 +5,19 @@ const createBook = ()=>{
 
 //book field
   const bookField = document.createElement("div");
-  // title
+  
+// title
   const bookTitle = document.createElement("h2");
   bookTitle.textContent = "Book an Appointment";
   bookField.appendChild(bookTitle);
-  //form element
+  bookField.className = "bookContainer"
+//form element
 
   const bookForm = document.createElement("form");
+  bookForm.className = 'bookForm'
   insertAfter(bookForm, bookTitle);
 
-  //input elements
+//input elements
   const bookFName = document.createElement("input");
   bookFName.setAttribute("placeholder", "First Name");
   bookForm.appendChild(bookFName);

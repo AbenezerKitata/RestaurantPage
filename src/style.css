@@ -6,16 +6,29 @@
 #main {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: thistle;
 
 }
 
 .btnContainer {
     height: 60px;
+    width: 100%;
     background-color: royalblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 110px;
+}
+.btnContainer>button{
+    appearance: none;
+    min-width: 60px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: tomato;
 }
 
 .content {
@@ -46,11 +59,19 @@
     background-color: blueviolet;
     color: black;
     width: 40%;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     text-align: center;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
 
+}
+.exp>img{
+    margin-bottom: 30px;
+}
+.exp>p{
+    width: 70%;
 }
 
 .locationsBox {
@@ -70,9 +91,82 @@
 }
 .locationsBox>ul{
     list-style: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 footer {
     background-color: rgb(59, 58, 58);
     color: white;
+    width: 100%;
+    text-align: center;
+}
+.image1{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.menuContainer{
+    display: flex;
+    width:50%;
+}
+.menuItm{
+    background-color: brown;
+    color: white;
+}
+.menuItm>span{
+    display: block;
+}
+.menuItm>p{
+    margin: 10px 0px;
+}
+.menuContainer2{
+    display: flex;
+    gap: 100px;
+    }
+.menuItm>p:nth-child(odd){
+    background-color: rgb(7, 68, 70);
+    margin: 40px 0px;
+}
+
+.aboutUsContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: tomato;
+
+}
+.aboutUsContainer>h1{
+    text-align: center;
+    margin: 100px 0px;
+}
+.aboutUsContainer>p{
+    padding: 0px 400px;
+    flex-basis: 650px;
+
+}
+.bookContainer{
+    flex-basis: 888px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    color: white;
+}
+.bookContainer>h2{
+    position: relative;
+    bottom: 200px;
+}
+.bookForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 200px;
+}
+.bookForm>button{
+    width: 60px;
+    position: relative;
+    left:60px;
 }

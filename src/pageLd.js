@@ -1,11 +1,13 @@
+import img1 from "./img1.jpg";
 const pgLd = () => {
   //insertAfter function
   function insertAfter(newNode, existingNode) {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
   }
   const main = document.getElementById("main");
-
-
+  const myImg = new Image();
+  myImg.src = img1;
+  myImg.classList.add("image1");
 
   //buttonsContainer
   const buttonsContainer = document.createElement("div");
@@ -38,27 +40,29 @@ const pgLd = () => {
 
   //titleBox
   const titleBox = document.createElement("div");
-  content.appendChild(titleBox)
-  titleBox.classList.add('titleBox')
+  content.appendChild(titleBox);
+  titleBox.classList.add("titleBox");
 
   //Title
   const title = document.createElement("h1");
   title.textContent = `This is my Restaurant...`;
   titleBox.appendChild(title);
-  title.classList.add('title');
-
+  title.classList.add("title");
 
   // Explanation
-  const exp = document.createElement("p");
-  exp.textContent =
-    "Zach Ramsbottom looked at the tiny blade in his hands and felt concerned He walked over to the window and reflected on his noisy surroundings. He had always loved picturesque Newton Abbot with its jealous, jittery jungle. It was a place that encouraged his tendency to feel concerned Then he saw something in the distance, or rather someone. It was the figure of Josh Parkes. Josh was a cute ogre with ginger fingers and beautiful eyebrows.Zach gulped. He glanced at his own reflection. He was a proud, bold, brandy drinker with ugly fingers and squat eyebrows. His friends saw him as a kindhearted, keen knight. Once, he had even saved a glamorous injured bird that was stuck in a drain.   But not even a proud person who had once saved a glamorous injured bird that was stuck in a drain, was prepared for what Josh had in store today. ";
+  const exp = document.createElement("div");
+  const textExp = document.createElement("p");
+  textExp.textContent =
+    "This Restaurant was built by fire and blood. Fire and Blood made This restaurant a very respectable place to have your little gatherings on. This place is only reserved for non pessant people so dont even bother showing up you dirty poors,, aaaghh... just kidding, youre all welcome, but seriouslly no poors, thank you!  ";
   insertAfter(exp, title);
-  exp.classList.add('exp')
+  exp.appendChild(textExp);
+  exp.appendChild(myImg);
+  exp.classList.add("exp");
 
   // Locations
   const locationBox = document.createElement("div");
   insertAfter(locationBox, titleBox);
-  locationBox.classList.add('locationsBox')
+  locationBox.classList.add("locationsBox");
   const locationText = document.createElement("h1");
   locationText.textContent = "Locations";
   locationBox.appendChild(locationText);
