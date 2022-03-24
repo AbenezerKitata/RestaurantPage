@@ -3,6 +3,7 @@ const createMenu = () => {
   const menuVar = document.createElement("div");
   menuVar.classList.add("menuContainer");
   const div = document.createElement('div');
+  div.classList.add('menu')
   menuVar.appendChild(div);
 
   const createMenuItems = (name, description, price, cal) => {
