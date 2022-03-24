@@ -1,6 +1,10 @@
-  //book field
+function insertAfter(newNode, existingNode) {
+  existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}
+const createBook = ()=>{
+
+//book field
   const bookField = document.createElement("div");
-  insertAfter(bookField, titleBox);
   // title
   const bookTitle = document.createElement("h2");
   bookTitle.textContent = "Book an Appointment";
@@ -27,3 +31,10 @@
     const submitbtn = document.createElement("button");
     submitbtn.textContent = "Submit";
     bookForm.appendChild(submitbtn);
+    return {
+      bookfield: bookField
+    }
+  
+  }
+
+    export {createBook}
